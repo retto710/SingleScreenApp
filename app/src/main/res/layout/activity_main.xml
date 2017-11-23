@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.example.anthony.singlescreenapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hunter Gaming"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/logo"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/hunter"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/subtitle"
+        />
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tienda de Alquiler de videojuegos "
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/direccion"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/gps"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintBottom_toTopOf="@id/icon2"
+        />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/direccion"
+        app:layout_constraintLeft_toRightOf="@id/icon1"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintBottom_toTopOf="@id/facebook"
+
+        />
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/fb"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/icon1"
+        app:layout_constraintBottom_toTopOf="@id/icon3"
+        />
+    <TextView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@id/icon2"
+        app:layout_constraintTop_toBottomOf="@id/icon1"
+        app:layout_constraintBottom_toTopOf="@id/horario"
+        android:text="@string/facebook"
+        />
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/horario"
+        app:layout_constraintTop_toBottomOf="@id/icon2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/horario"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@id/icon3"
+        app:layout_constraintTop_toBottomOf="@id/icon2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/horario"
+        />
+</android.support.constraint.ConstraintLayout>

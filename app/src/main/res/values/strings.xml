@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+    <string name="direccion">Jorge Muelle 157, San Borja 15036</string>
+    <string name="facebook">facebook.com/hunter.gaming.948</string>
+    <string name="horario" >L-D 9:00-23:00</string>
+</resources>
